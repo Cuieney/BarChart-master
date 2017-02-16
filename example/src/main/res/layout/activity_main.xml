@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="步/分钟"
+            android:textColor="#aaaaaa"
+            android:textSize="11sp" />
+
+
+
+        <com.example.library.BarChartView
+            android:id="@+id/barchart"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:axisColor="@color/colorPrimary"
+            app:hideGirdLine="false"
+            app:barColor="@color/colorPrimary"
+            app:max="300"
+            app:type="line"
+            app:radius="15"
+            app:yAxisTxtColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/song_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="歌曲：首"
+            android:textColor="#aaaaaa"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:layout_marginTop="30dp"
+        android:id="@+id/value_seek"
+        android:max="30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/rg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/hide_gird"
+            android:text="隐藏网格"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/show_gird"
+            android:text="显示网格"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/rg1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/line"
+            android:text="折现图标"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/bar"
+            android:text="柱形图表"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/rg2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/enable"
+            android:text="点击变色"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/unable"
+            android:text="点击无效"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

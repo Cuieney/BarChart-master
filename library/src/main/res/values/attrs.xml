@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BarChartView">
+        <attr name="axisColor" format="color" />
+        <attr name="axisWidth" format="integer" />
+        <attr name="xAxisTxtColor" format="color"/>
+        <attr name="yAxisTxtColor" format="color"/>
+        <attr name="barColor" format="color"/>
+        <attr name="hideGirdLine" format="boolean"/>
+        <attr name="max" format="integer"/>
+        <attr name="barPressEnable" format="boolean"/>
+        <attr name="radius" format="integer"/>
+        <attr name="type" format="enum">
+            <enum name="bar" value="0"/>
+            <enum name="line" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>
