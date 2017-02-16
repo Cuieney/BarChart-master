@@ -1,4 +1,4 @@
-# Charter
+# ChartView
 
 ![ChartView icon](https://github.com/Cuieney/BarChart-master/blob/master/bar.gif)
 
