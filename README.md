@@ -1,6 +1,6 @@
 # ChartView
 
-![ChartView icon](https://github.com/Cuieney/BarChart-master/blob/master/bar.gif)
+![ChartView icon](https://github.com/Cuieney/BarChart-master/blob/master/chart.gif)
 
 
 ## Usage
@@ -36,12 +36,12 @@ axisColor | color  | 设置xy轴颜色
 axisWidth | integer  | 设置轴的宽度
 xAxisTxtColor | color  | 设置x轴label的字体颜色
 yAxisTxtColor | color  | 设置y轴label的字体颜色
-barColor | color  | 设置charter的颜色
+barColor | color  | 设置chart的颜色
 hideGirdLine | color  | 是否隐藏背景表格
 max | color  | 设置y轴的最大值
 barPressEnable | color  | 设置chart点击是否有反应（变色）
 radius | color  | 设置折线图圆形半径
-type | color  | 设置chater样式
+type | color  | 设置chart样式
 
 
 
@@ -50,7 +50,7 @@ type | color  | 设置chater样式
 methodName  | describe
 ------------ | ------------
 setHideGirdLine(boolean)  | 设置隐藏背景表格
-setBarPressEnable(boolean) | 设置charter点击事件
+setBarPressEnable(boolean) | 设置chart点击事件
 setBarChartList(float[]) | 设置数据
-setCharType(int) | 设置chater类型
+setCharType(int) | 设置chart类型
 
