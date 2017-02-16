@@ -5,7 +5,7 @@
 
 ## Usage
 
-Please refer to the [Resize](https://github.com/Cuieney/BarChart-master/tree/master/example "a Safari extension").
+Please refer to the [example](https://github.com/Cuieney/BarChart-master/tree/master/example "a Safari extension").
  for seeing it in action.
 
 Shortcut to [attrs.xml](https://github.com/Cuieney/BarChart-master/blob/master/library/src/main/res/values/attrs.xml "a Safari extension").
@@ -28,22 +28,29 @@ Add library dependency to your build.gradle file then copy this code to layout
 
 ```
 
-##Developed by
-cuieney
+#### Attributes（布局中调用）
 
-##License
-```
-Copyright 2017 cuieney
+Attributes | format | describe
+------------ | ------------- | ------------
+axisColor | color  | 设置xy轴颜色
+axisWidth | integer  | 设置轴的宽度
+xAxisTxtColor | color  | 设置x轴label的字体颜色
+yAxisTxtColor | color  | 设置y轴label的字体颜色
+barColor | color  | 设置charter的颜色
+hideGirdLine | color  | 是否隐藏背景表格
+max | color  | 设置y轴的最大值
+barPressEnable | color  | 设置chart点击是否有反应（变色）
+radius | color  | 设置折线图圆形半径
+type | color  | 设置chater样式
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+#### Method（代码中调用）
+
+methodName  | describe
+------------ | ------------
+setHideGirdLine(boolean)  | 设置隐藏背景表格
+setBarPressEnable(boolean) | 设置charter点击事件
+setBarChartList(float[]) | 设置数据
+setCharType(int) | 设置chater类型
+
